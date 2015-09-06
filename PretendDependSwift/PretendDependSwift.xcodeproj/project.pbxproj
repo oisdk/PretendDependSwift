@@ -10,6 +10,9 @@
 		706C66101B9C5C66003CA2FC /* PretendDependSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 706C660F1B9C5C66003CA2FC /* PretendDependSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		706C66171B9C5C66003CA2FC /* PretendDependSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 706C660C1B9C5C66003CA2FC /* PretendDependSwift.framework */; settings = {ASSET_TAGS = (); }; };
 		706C661C1B9C5C66003CA2FC /* PretendDependSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706C661B1B9C5C66003CA2FC /* PretendDependSwiftTests.swift */; };
+		706C66271B9C5C85003CA2FC /* Num.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706C66261B9C5C85003CA2FC /* Num.swift */; settings = {ASSET_TAGS = (); }; };
+		706C66291B9C5D6A003CA2FC /* ConstArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706C66281B9C5D6A003CA2FC /* ConstArray.swift */; settings = {ASSET_TAGS = (); }; };
+		706C662B1B9C5E7A003CA2FC /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706C662A1B9C5E7A003CA2FC /* Tuple.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		706C66161B9C5C66003CA2FC /* PretendDependSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PretendDependSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		706C661B1B9C5C66003CA2FC /* PretendDependSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PretendDependSwiftTests.swift; sourceTree = "<group>"; };
 		706C661D1B9C5C66003CA2FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		706C66261B9C5C85003CA2FC /* Num.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Num.swift; sourceTree = "<group>"; };
+		706C66281B9C5D6A003CA2FC /* ConstArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstArray.swift; sourceTree = "<group>"; };
+		706C662A1B9C5E7A003CA2FC /* Tuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +79,9 @@
 			children = (
 				706C660F1B9C5C66003CA2FC /* PretendDependSwift.h */,
 				706C66111B9C5C66003CA2FC /* Info.plist */,
+				706C66261B9C5C85003CA2FC /* Num.swift */,
+				706C66281B9C5D6A003CA2FC /* ConstArray.swift */,
+				706C662A1B9C5E7A003CA2FC /* Tuple.swift */,
 			);
 			path = PretendDependSwift;
 			sourceTree = "<group>";
@@ -142,6 +151,7 @@
 		706C66031B9C5C66003CA2FC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Donnacha Oisín Kidney";
 				TargetAttributes = {
@@ -193,6 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				706C66271B9C5C85003CA2FC /* Num.swift in Sources */,
+				706C662B1B9C5E7A003CA2FC /* Tuple.swift in Sources */,
+				706C66291B9C5D6A003CA2FC /* ConstArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +315,7 @@
 		706C66211B9C5C66003CA2FC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -314,12 +328,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = donnacha.oisin.kidney.PretendDependSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		706C66221B9C5C66003CA2FC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
