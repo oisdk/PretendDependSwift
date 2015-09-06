@@ -45,3 +45,13 @@ protocol Tuple : _AnyTuple {
 }
 
 extension NonEmptyTuple : Tuple {}
+
+extension Tuple {
+  typealias First = Head
+}
+extension Tuple where Tail : Tuple {
+  typealias Second = Tail.Head
+}
+extension Tuple where Tail : Tuple, Tail.Tail : Tuple {
+  typealias Third = Tail.Tail.Head
+}

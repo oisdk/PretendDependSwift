@@ -1,5 +1,5 @@
 public struct ConstArray<Element, Count : Nat> {
-  private var contents: [Element]
+  internal var contents: [Element]
 }
 
 public func emptyArray<E>() -> ConstArray<E, Zero> { return ConstArray(contents: []) }
@@ -96,3 +96,13 @@ public extension ConstArray {
     return ConstArray<Element, AddNine<Count>.Result>(contents: contents + a.contents)
   }
 }
+
+public extension ConstArray {
+  func map<T>(@noescape transform: Element throws -> T) rethrows -> ConstArray<T, Count> {
+    return ConstArray<T, Count>(contents: try contents.map(transform))
+  }
+  func reverse() -> ConstArray {
+    return ConstArray(contents: contents)
+  }
+}
+

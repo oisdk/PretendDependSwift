@@ -13,6 +13,7 @@
 		706C66271B9C5C85003CA2FC /* Num.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706C66261B9C5C85003CA2FC /* Num.swift */; settings = {ASSET_TAGS = (); }; };
 		706C66291B9C5D6A003CA2FC /* ConstArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706C66281B9C5D6A003CA2FC /* ConstArray.swift */; settings = {ASSET_TAGS = (); }; };
 		706C662B1B9C5E7A003CA2FC /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706C662A1B9C5E7A003CA2FC /* Tuple.swift */; settings = {ASSET_TAGS = (); }; };
+		706C662D1B9CA3C0003CA2FC /* Zips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706C662C1B9CA3C0003CA2FC /* Zips.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		706C66261B9C5C85003CA2FC /* Num.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Num.swift; sourceTree = "<group>"; };
 		706C66281B9C5D6A003CA2FC /* ConstArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstArray.swift; sourceTree = "<group>"; };
 		706C662A1B9C5E7A003CA2FC /* Tuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
+		706C662C1B9CA3C0003CA2FC /* Zips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zips.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				706C66111B9C5C66003CA2FC /* Info.plist */,
 				706C66261B9C5C85003CA2FC /* Num.swift */,
 				706C66281B9C5D6A003CA2FC /* ConstArray.swift */,
+				706C662C1B9CA3C0003CA2FC /* Zips.swift */,
 				706C662A1B9C5E7A003CA2FC /* Tuple.swift */,
 			);
 			path = PretendDependSwift;
@@ -206,6 +209,7 @@
 				706C66271B9C5C85003CA2FC /* Num.swift in Sources */,
 				706C662B1B9C5E7A003CA2FC /* Tuple.swift in Sources */,
 				706C66291B9C5D6A003CA2FC /* ConstArray.swift in Sources */,
+				706C662D1B9CA3C0003CA2FC /* Zips.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +396,7 @@
 				706C66221B9C5C66003CA2FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		706C66231B9C5C66003CA2FC /* Build configuration list for PBXNativeTarget "PretendDependSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +405,7 @@
 				706C66251B9C5C66003CA2FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
