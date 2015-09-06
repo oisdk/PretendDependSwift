@@ -57,3 +57,42 @@ public extension ConstArray where Count : NonZero {
     return (temp.removeAtIndex(i), ConstArray<Element, Count.Pred>(contents: temp))
   }
 }
+
+public extension ConstArray {
+  func appendedContentsOf(a: ConstArray<Element, One>)
+    -> ConstArray<Element, AddOne<Count>.Result> {
+    return ConstArray<Element, AddOne<Count>.Result>(contents: contents + a.contents)
+  }
+  func appendedContentsOf(a: ConstArray<Element, Two>)
+    -> ConstArray<Element, AddTwo<Count>.Result> {
+    return ConstArray<Element, AddTwo<Count>.Result>(contents: contents + a.contents)
+  }
+  func appendedContentsOf(a: ConstArray<Element, Three>)
+    -> ConstArray<Element, AddThree<Count>.Result> {
+    return ConstArray<Element, AddThree<Count>.Result>(contents: contents + a.contents)
+  }
+  func appendedContentsOf(a: ConstArray<Element, Four>)
+    -> ConstArray<Element, AddFour<Count>.Result> {
+    return ConstArray<Element, AddFour<Count>.Result>(contents: contents + a.contents)
+  }
+  func appendedContentsOf(a: ConstArray<Element, Five>)
+    -> ConstArray<Element, AddFive<Count>.Result> {
+    return ConstArray<Element, AddFive<Count>.Result>(contents: contents + a.contents)
+  }
+  func appendedContentsOf(a: ConstArray<Element, Six>)
+    -> ConstArray<Element, AddSix<Count>.Result> {
+    return ConstArray<Element, AddSix<Count>.Result>(contents: contents + a.contents)
+  }
+  func appendedContentsOf(a: ConstArray<Element, Seven>)
+    -> ConstArray<Element, AddSeven<Count>.Result> {
+    return ConstArray<Element, AddSeven<Count>.Result>(contents: contents + a.contents)
+  }
+  func appendedContentsOf(a: ConstArray<Element, Eight>)
+    -> ConstArray<Element, AddEight<Count>.Result> {
+    return ConstArray<Element, AddEight<Count>.Result>(contents: contents + a.contents)
+  }
+  func appendedContentsOf(a: ConstArray<Element, Nine>)
+    -> ConstArray<Element, AddNine<Count>.Result> {
+    return ConstArray<Element, AddNine<Count>.Result>(contents: contents + a.contents)
+  }
+}

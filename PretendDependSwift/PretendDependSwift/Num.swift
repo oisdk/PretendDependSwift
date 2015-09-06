@@ -16,15 +16,15 @@ public typealias Seven = Succ<Six>
 public typealias Eight = Succ<Seven>
 public typealias Nine  = Succ<Eight>
 
-public struct AddOne  <N : Nat> { typealias Result = Succ<N>                  }
-public struct AddTwo  <N : Nat> { typealias Result = Succ<AddOne<N>.Result>   }
-public struct AddThree<N : Nat> { typealias Result = Succ<AddTwo<N>.Result>   }
-public struct AddFour <N : Nat> { typealias Result = Succ<AddThree<N>.Result> }
-public struct AddFive <N : Nat> { typealias Result = Succ<AddFour<N>.Result>  }
-public struct AddSix  <N : Nat> { typealias Result = Succ<AddFive<N>.Result>  }
-public struct AddSeven<N : Nat> { typealias Result = Succ<AddSix<N>.Result>   }
-public struct AddEight<N : Nat> { typealias Result = Succ<AddSeven<N>.Result> }
-public struct AddNine <N : Nat> { typealias Result = Succ<AddEight<N>.Result> }
+public struct AddOne  <N : Nat> { public typealias Result = Succ<N>                  }
+public struct AddTwo  <N : Nat> { public typealias Result = Succ<AddOne<N>.Result>   }
+public struct AddThree<N : Nat> { public typealias Result = Succ<AddTwo<N>.Result>   }
+public struct AddFour <N : Nat> { public typealias Result = Succ<AddThree<N>.Result> }
+public struct AddFive <N : Nat> { public typealias Result = Succ<AddFour<N>.Result>  }
+public struct AddSix  <N : Nat> { public typealias Result = Succ<AddFive<N>.Result>  }
+public struct AddSeven<N : Nat> { public typealias Result = Succ<AddSix<N>.Result>   }
+public struct AddEight<N : Nat> { public typealias Result = Succ<AddSeven<N>.Result> }
+public struct AddNine <N : Nat> { public typealias Result = Succ<AddEight<N>.Result> }
 
 public protocol Binary {
   typealias A : Nat
