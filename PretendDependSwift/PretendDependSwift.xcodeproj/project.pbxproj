@@ -37,6 +37,7 @@
 		706C66281B9C5D6A003CA2FC /* ConstArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstArray.swift; sourceTree = "<group>"; };
 		706C662A1B9C5E7A003CA2FC /* Tuple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tuple.swift; sourceTree = "<group>"; };
 		706C662C1B9CA3C0003CA2FC /* Zips.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zips.swift; sourceTree = "<group>"; };
+		706C662E1B9CB1DB003CA2FC /* Playground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Playground.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +86,7 @@
 				706C66281B9C5D6A003CA2FC /* ConstArray.swift */,
 				706C662C1B9CA3C0003CA2FC /* Zips.swift */,
 				706C662A1B9C5E7A003CA2FC /* Tuple.swift */,
+				706C662E1B9CB1DB003CA2FC /* Playground.playground */,
 			);
 			path = PretendDependSwift;
 			sourceTree = "<group>";
