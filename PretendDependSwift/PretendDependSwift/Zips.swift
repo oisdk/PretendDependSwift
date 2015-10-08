@@ -25,7 +25,9 @@ public func zipWith<A, B, C, T, NN : Nat>
     )
 }
 
-public func transpose<E, X : Nat, Y : Nat>(mat: ConstArray<ConstArray<E, X>, Y>) -> ConstArray<ConstArray<E, Y>, X> {
+public func transpose<E, X : Nat, Y : Nat>
+  (mat: ConstArray<ConstArray<E, X>, Y>)
+  -> ConstArray<ConstArray<E, Y>, X> {
   return ConstArray<ConstArray<E, Y>, X>(contents:
     mat[0].indices.map { i in mat.map { a in a[i] }}
   )
